@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+   title: {{ blogPost.title }}</br>
+    content: {{ blogPost.content }}</br>
+     datetime: {{ blogPost.datetime }}</br>
+     author: {{ blogPost.author.first_name }} {{ blogPost.author.last_name }}</br></br>
+     {% for comment in blogPost.blogcomment_set.all %}
+     	Comment.firstName: {{comment.firstName}}</br>
+     	{{comment.lastName}}</br>
+     	{{comment.email}}</br>
+     	{{comment.datetime}}</br>
+     	{{comment.content}}</br></br>
+     {% endfor %}
+     </br></br></br>
+</body>
+</html>
