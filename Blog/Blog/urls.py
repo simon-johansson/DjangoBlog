@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
-from ourApp.views import blogIndex, blogPost
+from myapp.views import blogIndex, blogPost
 
 urlpatterns = patterns('',
     # Examples:
